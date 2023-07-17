@@ -43,6 +43,21 @@ function GenerarF(){
     
   };
   
+  function generarCovid(tabla, tamanio){
+    var Covid1 = [Math.random*9, Math.random*9];
+    var Covid2 = [Math.random*9, Math.random*9];
+    var Covid3 = [Math.random*9, Math.random*9];
+    if (tamanio>=16){
+      var Covid4 = [Math.random*9, Math.random*9];
+      var Covid5 = [Math.random*9, Math.random*9];
+      var Covid6 = [Math.random*9, Math.random*9];
+      if (tamanio==32){
+        var Covid7 = [Math.random*9, Math.random*9];
+        var Covid8 = [Math.random*9, Math.random*9];
+        var Covid9 = [Math.random*9, Math.random*9];
+      }
+    }
+  }
   
   function CrearTabla(){
   
@@ -52,13 +67,16 @@ function GenerarF(){
   
   
     if (Op1.checked==true){
-    GenerarF();
+    tabla=GenerarF();
+    generarCovid(tabla, 9);
     }
-    if (Op2.checked==true){
-    GenerarM();
+    else if (Op2.checked==true){
+    tabla=GenerarM(tabla, 16);
+    generarCovid(tabla, 16);
     } 
-    if (Op3.checked==true){
-    GenerarD();
+    else if (Op3.checked==true){
+    tabla=GenerarD(tabla, 32);
+    generarCovid(tabla, 32);
     }
-     
+    
   };
