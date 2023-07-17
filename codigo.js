@@ -4,7 +4,7 @@ function GenerarF(){
     for(i=0;i<9;i++){
     tabla+="<tr>";
     for(j=0;j<9;j++){
-    tabla+="<td>"+"<IMG src=\"Bloque.ico\">"+ "</td>";
+    tabla+="<td>"+"<a href=\"#\""+"<IMG src=\"Bloque.ico\">"+"</a>" +"</td>";
     }
     tabla+="</tr>";
     }
@@ -19,7 +19,7 @@ function GenerarF(){
     for(i=0;i<16;i++){
     tabla+="<tr>";
     for(j=0;j<16;j++){
-    tabla+="<td>"+"<IMG src=\"Bloque.ico\">"+ "</td>";
+    tabla+="<td>"+"<a href=\"#\""+"<IMG src=\"Bloque.ico\">"+"</a>" +"</td>";
     }
     tabla+="</tr>";
     }
@@ -34,7 +34,7 @@ function GenerarF(){
     for(i=0;i<32;i++){
     tabla+="<tr>";
     for(j=0;j<32;j++){
-    tabla+="<td>"+"<IMG src=\"Bloque.ico\">"+ "</td>";
+    tabla+="<td>"+"<a href=\"#\""+"<IMG src=\"Bloque.ico\">"+"</a>" +"</td>";
     }
     tabla+="</tr>";
     }
