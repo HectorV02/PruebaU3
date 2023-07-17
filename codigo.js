@@ -15,56 +15,52 @@ function detenerTemporizador() {
   clearInterval(timerInterval);
 }
 
-function GenerarF() {
-  alert("Usted ha seleccionado el Nivel Fácil");
-
-  var tabla = "<table border=\"0\">";
-  for (i = 0; i < 9; i++) {
-    tabla += "<tr>";
-    for (j = 0; j < 9; j++) {
-      tabla += "<td>" + "<img src=\"Bloque.ico\">" + "</td>";
-    }
-    tabla += "</tr>";
+function GenerarF(){
+  alert("Usted Seleccionado el Nivel Facil : ");
+  var tabla="<table border=\"0\">";
+  for(i=0;i<9;i++){
+  tabla+="<tr>";
+  for(j=0;j<9;j++){
+  tabla+="<td>"+"<a href=\"#\" onClick = \"disapear();\">"+"<IMG src=\"Bloque.ico\" id = \"block\">"+"</a>" +"</td>";
   }
-  tabla += "</table>";
-  document.getElementById("Resultado").innerHTML = tabla;
-
-  iniciarTemporizador();
-}
-
-function GenerarM() {
-  alert("Usted ha seleccionado el Nivel Medio");
-
-  var tabla = "<table border=\"0\">";
-  for (i = 0; i < 16; i++) {
-    tabla += "<tr>";
-    for (j = 0; j < 16; j++) {
-      tabla += "<td>" + "<img src=\"Bloque.ico\">" + "</td>";
-    }
-    tabla += "</tr>";
+  tabla+="</tr>";
   }
-  tabla += "</table>";
-  document.getElementById("Resultado").innerHTML = tabla;
+  tabla+="</table>";
+  document.getElementById("Resultado").innerHTML=tabla;
+  
+};
 
-  iniciarTemporizador();
-}
-
-function GenerarD() {
-  alert("Usted ha seleccionado el Nivel Difícil");
-
-  var tabla = "<table border=\"0\">";
-  for (i = 0; i < 32; i++) {
-    tabla += "<tr>";
-    for (j = 0; j < 32; j++) {
-      tabla += "<td>" + "<img src=\"Bloque.ico\">" + "</td>";
-    }
-    tabla += "</tr>";
+function GenerarM(){
+  alert("Usted Seleccionado el Nivel Medio : ");
+  var tabla="<table border=\"0\">";
+  for(i=0;i<16;i++){
+  tabla+="<tr>";
+  for(j=0;j<16;j++){
+    tabla+="<td>"+"<a href=\"#\" onClick = \"disapear();\">"+"<IMG src=\"Bloque.ico\" id = \"block\">"+"</a>" +"</td>";
   }
-  tabla += "</table>";
-  document.getElementById("Resultado").innerHTML = tabla;
-
-  iniciarTemporizador();
+  tabla+="</tr>";
+  }
+  tabla+="</table>";
+  document.getElementById("Resultado").innerHTML=tabla;
+  
+};
+function disapear(id){
+  document.getElementById(id).style.opacity = "0";
 }
+function GenerarD(){
+  alert("Usted Seleccionado el Nivel Dificil : ");
+  var tabla="<table border=\"0\">";
+  for(i=0;i<32;i++){
+  tabla+="<tr>";
+  for(j=0;j<32;j++){
+    tabla+="<td>"+"<a href=\"#\" onClick = \"disapear();\">"+"<IMG src=\"Bloque.ico\" id = \"block\">"+"</a>" +"</td>";
+  }
+  tabla+="</tr>";
+  }
+  tabla+="</table>";
+  document.getElementById("Resultado").innerHTML=tabla;
+  
+};
 
 function CrearTabla() {
   var Op1 = document.getElementById("Facil");
