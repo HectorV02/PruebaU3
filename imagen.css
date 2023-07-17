@@ -1,0 +1,22 @@
+.Black{
+     background-color:Gray;
+}
+
+
+#Menu {
+    width:  100%;
+    height: 100%;
+    text-align: center;
+}
+
+#SubMenu{
+     display: inline-block;
+     text-align: center;
+    background-color:#999999;
+    width: 310px;
+    height: 240px;
+}
+#DIV{
+background-color:blue;
+
+}

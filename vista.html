@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="1.css" />
+    </head>
+    <body class="Black" >
+        <form id="Menu">
+            <div id="SubMenu">
+
+              <h2>Bienvenido al Juego Buscaminas</h2>
+              <h3>Ingrese Su Nombre</h3><input type="text" id="Nombre">
+              <p>Escoja La Dificultad De la Partida</p>
+
+              Facil <input type="radio"  id="Facil"    name="Nivel" value="Facil">
+              Medio <input type="radio"  id="Medio"    name="Nivel" value="Medio">
+              Dificil<input type="radio" id="Dificil"  name="Nivel" value="Dificil">
+
+              <input type="button" id="enviar" value="Iniciar Partida" onclick="CrearTabla()"/>
+              <input type="button" id="limpiar" value="Salir" onclick="Crear2()"/>
+              </div></form>
+        <div id="Resultado"></div>
+    </body>
+    <script src="1.js"></script>
+</html>
