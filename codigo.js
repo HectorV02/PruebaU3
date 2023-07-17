@@ -11,6 +11,7 @@ function actualizarTemporizador() {
 }
 
 function detenerTemporizador() {
+  tiempo=0;
   clearInterval(timerInterval);
 }
 

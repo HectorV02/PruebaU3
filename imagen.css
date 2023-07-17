@@ -33,3 +33,31 @@
     font-weight: bold;
     margin-top: 10px;
 }
+
+#tablero-puntuacion {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.puntuacion {
+    text-align: center;
+}
+
+.puntuacion h3 {
+    margin-top: 0;
+}
+
+.puntuacion p {
+    margin: 5px 0;
+}
+
+#tiempo-empleado {
+    font-size: 24px;
+    font-weight: bold;
+}
